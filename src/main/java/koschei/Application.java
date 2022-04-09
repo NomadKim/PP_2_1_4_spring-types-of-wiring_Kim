@@ -9,7 +9,7 @@ public class Application {
         ApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(AppConfig.class);
         KoscheiTheDeathless koscheiTheDeathless =
-                applicationContext.getBean(KoscheiTheDeathless.class);
+                applicationContext.getBean("koscheiTheDeathless", KoscheiTheDeathless.class);
         System.out.println(koscheiTheDeathless.getRulesByDeth());
     }
 }
